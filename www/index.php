@@ -9,6 +9,9 @@
     <!-- CSS -->
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/skeleton.css" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
     <link href='fullcalendar/fullcalendar.min.css' rel='stylesheet' />
     <link href='fullcalendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
 
