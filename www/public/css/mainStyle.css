@@ -1,3 +1,53 @@
-.fc-view-container {
+#skema .fc-view-container {
     background: #fff;
+}
+
+#skema .fc-button {
+    background: #fff;
+    padding: .7em 1.5em;
+    height: auto;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    color: #969696;
+    border-radius: 1px;
+    border-color: #ddd;
+    text-shadow: none;
+}
+
+#skema .fc-head {
+    line-height: 3em;
+}
+
+#skema .fc-head a {
+    color: inherit;
+}
+
+#skema .fc-title, #skema .fc-day-grid-event .fc-time {
+    padding: 0 0.3em;
+}
+
+#skema .fc-event-container {
+    padding: 0.3em 0.5em
+}
+
+#skema .fc-event-container:first-child {
+    padding: 0.4em 0.5em .3em
+}
+
+#skema tr:first-child > td > .fc-day-grid-event {
+    margin-top: 2px;
+}
+
+#skema .fc-event {
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #71aecc;
+}
+
+#skema .fc-day-grid-event{
+    margin: 0;
+    padding:,4em;
+}
+
+#skema .fc-event, #skema .fc-event-dot {
+    background-color: #55a5ce;
 }

@@ -13,7 +13,7 @@
 
         $(document).ready(function() {
 
-            $('#calendar').fullCalendar({
+            $('#skema').fullCalendar({
                 editable: true,
                 weekends: false,
                 navLinks: true,
@@ -81,5 +81,5 @@
         });
 
     </script>
-<div class="container" id="calendar"></div>
+<div class="container" id="skema"></div>
 @endsection
