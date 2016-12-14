@@ -1,5 +1,8 @@
 @extends('layouts.app')
 @section('head')
+    <link href="/css/fullcalendar.min.css" rel="stylesheet">
+    <link href='/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <link href="/css/mainStyle.css" rel="stylesheet">
     <script src='/js/moment.min.js'></script>
     <script src='/js/jquery.min.js'></script>
     <script src="/js/fullcalendar.min.js"></script>
@@ -14,6 +17,7 @@
                 editable: true,
                 weekends: false,
                 navLinks: true,
+                height: 500,
                 defaultView: 'basicWeek',
                 eventLimit: true,
                 events: [
@@ -77,5 +81,5 @@
         });
 
     </script>
-<div id="calendar"></div>
+<div class="container" id="calendar"></div>
 @endsection

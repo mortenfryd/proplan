@@ -19,6 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/calendartest', function () {
-    return view('calendartest');
+Route::get('/skema', function () {
+    return view('skema');
 });
