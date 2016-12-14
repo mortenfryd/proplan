@@ -12,6 +12,8 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/fullcalendar.min.css" rel="stylesheet">
+    <link href='/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
 
     <!-- Scripts -->
     <script>
@@ -19,6 +21,9 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src='/js/moment.min.js'></script>
+    <script src='/js/jquery.min.js'></script>
+    <script src=/js/fullcalendar.min.js'></script>
 </head>
 <body>
     <div id="app">
