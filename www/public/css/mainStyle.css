@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 #skema .fc-view-container {
     background: #fff;
 }
@@ -11,6 +17,14 @@
     border-radius: 1px;
     border-color: #ddd;
     text-shadow: none;
+}
+
+#skema .fc-state-default{
+    transition: all 0.2s linear 0s;
+}
+
+#skema .fc-state-default:hover:not(.fc-state-disabled){
+    background: #fafafa;
 }
 
 #skema .fc-head {
@@ -39,7 +53,7 @@
 
 #skema .fc-event {
     font-size: .9em;
-    line-height: 2;
+    line-height: 2.3;
     border: 1px solid #71aecc;
 }
 
@@ -50,4 +64,8 @@
 
 #skema .fc-event, #skema .fc-event-dot {
     background-color: #55a5ce;
+}
+
+#skema td.fc-today {
+    background: #fbf8ee;
 }
