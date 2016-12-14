@@ -21,9 +21,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
-    <script src='/js/moment.min.js'></script>
-    <script src='/js/jquery.min.js'></script>
-    <script src=/js/fullcalendar.min.js'></script>
+    @yield('head')
 </head>
 <body>
     <div id="app">
@@ -87,6 +85,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <!-- <script src="/js/app.js"></script> -->
 </body>
 </html>
