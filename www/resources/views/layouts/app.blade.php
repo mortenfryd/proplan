@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/fullcalendar.min.css" rel="stylesheet">
+    <link href='/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+    <link href="/css/mainStyle.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -23,8 +26,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
+        <nav class="navbar container navbar-default navbar-static-top">
+
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -76,7 +79,7 @@
                         @endif
                     </ul>
                 </div>
-            </div>
+
         </nav>
 
         @yield('content')

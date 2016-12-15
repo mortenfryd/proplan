@@ -1,8 +1,5 @@
 @extends('layouts.app')
 @section('head')
-    <link href="/css/fullcalendar.min.css" rel="stylesheet">
-    <link href='/css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
-    <link href="/css/mainStyle.css" rel="stylesheet">
     <script src='/js/moment.min.js'></script>
     <script src='/js/jquery.min.js'></script>
     <script src="/js/fullcalendar.min.js"></script>
@@ -14,6 +11,19 @@
         $(document).ready(function() {
 
             $('#skema').fullCalendar({
+                header: {
+                    left: 'month,basicWeek,basicDay',
+                    center: 'title',
+                    right: 'today,prev,next'
+                },
+                views: {
+                    month: {
+                        titleFormat: 'MMMM YYYY'
+                    },
+                    week: {
+                        titleFormat: 'MMM D'
+                    }
+                },
                 editable: true,
                 weekends: false,
                 navLinks: true,

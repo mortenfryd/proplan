@@ -4,6 +4,21 @@ html, body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar-default{
+    border: 1px solid;
+    background: #fff;
+    border-color: #00aadf #ddd #ddd;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+a.navbar-brand{
+    font-weight: 700;
+}
+
+#skema{
+    padding: 0;
+}
+
 #skema .fc-view-container {
     background: #fff;
 }
@@ -52,9 +67,11 @@ html, body{
 }
 
 #skema .fc-event {
-    font-size: .9em;
+    font-size: 1em;
     line-height: 2.3;
-    border: 1px solid #71aecc;
+    border: 1px solid #4997bd;
+    box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0.11);
+    border-radius: 1px;
 }
 
 #skema .fc-day-grid-event{
@@ -67,5 +84,5 @@ html, body{
 }
 
 #skema td.fc-today {
-    background: #fbf8ee;
+    background: #f3f3f3;
 }
