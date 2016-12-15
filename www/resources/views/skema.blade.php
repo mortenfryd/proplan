@@ -3,6 +3,7 @@
     <script src='/js/moment.min.js'></script>
     <script src='/js/jquery.min.js'></script>
     <script src="/js/fullcalendar.min.js"></script>
+    <script src="/js/da.js"></script>
 @endsection
 
 @section('content')
@@ -20,8 +21,8 @@
                     month: {
                         titleFormat: 'MMMM YYYY'
                     },
-                    week: {
-                        titleFormat: 'MMM D'
+                    day: {
+                        titleFormat: 'D MMMM YYYY'
                     }
                 },
                 editable: true,
