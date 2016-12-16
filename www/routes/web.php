@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/skema', function () {
     return view('skema');
 });
+
+Route::get("/test", function() {
+    return view("test");
+})->middleware("auth");
