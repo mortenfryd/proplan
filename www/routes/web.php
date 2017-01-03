@@ -47,6 +47,8 @@ Route::get('/movies/{page?}/{sort?}', function ($page = 1, $sort = 'premiere') {
     }
     $movies = json_decode($json, TRUE);
     
+    $active = 1;
+    
     // Send variabler til viewet
     return view('movies', [
         'total_records' => $total_records,
@@ -58,6 +60,7 @@ Route::get('/movies/{page?}/{sort?}', function ($page = 1, $sort = 'premiere') {
         'next_page' => $next_page,
         'movies' => $movies,
         'sort' => $sort,
+        'active' => $active
     ]);
 });
 

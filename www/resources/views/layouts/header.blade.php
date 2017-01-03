@@ -16,7 +16,7 @@
     </main>
     <footer class="light">
         <div class="social">
-            <div class="one"><a class="logo" href="/"><h3>Nepharia</h3></a></div><div class="two">
+            <div class="one"><a class="logo" href="/"><h3>{{ config('app.name', 'Laravel') }}</h3></a></div><div class="two">
                 <a href="#TopMenu" title="Go to top"><i class="fa fa-2x fa-angle-up"></i></a>
             </div><div class="three">
                 <a href="#" title="Facebook profile"><i class="fa fa-facebook-square fa-2x"></i></a>
