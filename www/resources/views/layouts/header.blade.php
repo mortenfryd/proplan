@@ -3,7 +3,13 @@
 <head>
 	<!-- Site meta -->
 	<meta charset="utf-8">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>
+        @php
+            if(isset($siteTitle))
+                echo $siteTitle . ' - ';
+        @endphp
+        {{ config('app.name', 'Laravel') }}
+    </title>
     <!-- CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400,400italic,600,600italic,700,700italic,800,800italic|Source+Sans+Pro:400,900,700" rel="stylesheet" type="text/css">
@@ -28,7 +34,7 @@
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="/static/js/script.js" type="text/javascript"></script>
+<script src="http://nepharia.net/static/js/script.js" type="text/javascript"></script>
 
 </body>
 </html>

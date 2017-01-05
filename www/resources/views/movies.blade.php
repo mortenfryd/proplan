@@ -1,3 +1,6 @@
+@php
+$siteTitle = 'Movies ' . $page . '/' . $total_pages;
+@endphp
 @extends('layouts.header') 
 @section('content')
 <header class="grid fxHeightL">
