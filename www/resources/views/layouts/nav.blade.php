@@ -2,11 +2,11 @@
     <ul>
         <li class="logo"><a href="/">{{ config('app.name', 'Laravel') }}</a></li>
         <li 
-            @if ($active === 1)
+            @if (isset($active) && $active === 1)
                 class="active"
             @endif
         ><a href="/movies/">Movies</a></li>
-        <li @if ($active === 2)
+        <li @if (isset($active) && $active === 2)
                 class="active"
             @endif
         ><a href="/skema/">Skema</a></li>
