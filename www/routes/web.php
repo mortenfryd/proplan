@@ -66,44 +66,45 @@ Route::get('/movies/{page?}/{sort?}', function ($page = 1, $sort = 'premiere') {
 
 Route::get('/movie/{movie}', function ($movie) {
     $json = file_get_contents('http://nepharia.net:1337/api/movie/' . $movie);
-        $movies = json_decode($json, TRUE);
-        
-        $data['title'] = $movies[0]['Title'];
-        $data['movie'] = $movies;
-        
-        //Rating (0 - 100)
-        if ($movies[0]['Rating'] >= 95){
-            $data['movie'][0]['Rating'] = '<span class="ratings five"></span>';
-        }
-        elseif ($movies[0]['Rating'] >= 85){
-            $data['movie'][0]['Rating'] = '<span class="ratings fourhalf"></span>';
-        }
-        elseif ($movies[0]['Rating'] >= 70){
-            $data['movie'][0]['Rating'] = '<span class="ratings four"></span>';
-        }
-        elseif ($movies[0]['Rating'] >= 60){
-            $data['movie'][0]['Rating'] = '<span class="ratings threehalf"></span>';
-        }
-        elseif ($movies[0]['Rating'] >= 50){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings three\"></span>";
-        }
-        elseif ($movies[0]['Rating'] >= 40){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings twohalf\"></span>";
-        }
-        elseif ($movies[0]['Rating'] >= 30){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings two\"></span>";
-        }
-        elseif ($movies[0]['Rating'] >= 20){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings onehalf\"></span>";
-        }
-        elseif ($movies[0]['Rating'] >= 10){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings one\"></span>";
-        }
-        elseif ($movies[0]['Rating'] >= 1){
-            $data['movie'][0]['Rating'] = "<span class=\"ratings\"></span>";
-        }
-        else{
-            $data['movie'][0]['Rating'] = "Not yet rated";
-        }
+    $movies = json_decode($json, TRUE);
+
+    $data['title'] = $movies[0]['Title'];
+    $data['movie'] = $movies;
+
+    //Rating (0 - 100)
+    if ($movies[0]['Rating'] >= 95){
+        $data['movie'][0]['Rating'] = '<span class="ratings five"></span>';
+    }
+    elseif ($movies[0]['Rating'] >= 85){
+        $data['movie'][0]['Rating'] = '<span class="ratings fourhalf"></span>';
+    }
+    elseif ($movies[0]['Rating'] >= 65){
+        $data['movie'][0]['Rating'] = '<span class="ratings four"></span>';
+    }
+    elseif ($movies[0]['Rating'] >= 55){
+        $data['movie'][0]['Rating'] = '<span class="ratings threehalf"></span>';
+    }
+    elseif ($movies[0]['Rating'] >= 45){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings three\"></span>";
+    }
+    elseif ($movies[0]['Rating'] >= 35){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings twohalf\"></span>";
+    }
+    elseif ($movies[0]['Rating'] >= 20){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings two\"></span>";
+    }
+    elseif ($movies[0]['Rating'] >= 15){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings onehalf\"></span>";
+    }
+    elseif ($movies[0]['Rating'] >= 10){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings one\"></span>";
+    }
+    elseif ($movies[0]['Rating'] >= 1){
+        $data['movie'][0]['Rating'] = "<span class=\"ratings\"></span>";
+    }
+    else{
+        $data['movie'][0]['Rating'] = "Not yet rated";
+    }
+    
     return view('movie', ['data' => $data]);
 });
